@@ -105,6 +105,7 @@ Let’s use _numpy_ which you’ll learn more about in the next section to creat
 The above creates a 4 x 4 DataFrame that randomly selects numbers in the range of 0-100.
 
 The following snippet creates a DataFrame that compares the temperatures of Los Angeles and San Francisco from 2012-2017:
+
 ```numpy
 >>> import pandas as pd
 >>> dates = pd.date_range('04-03-2012','04-08-2012')
@@ -156,6 +157,7 @@ To return the cities back in a specific order do the following:
     2012-04-08             63           79
 
 And, if you want to access just the temperatures of Los Angeles do the following:
+
 ```python
 >>> cities['Los Angeles']
 ```
@@ -377,6 +379,7 @@ If you wanted to access just the first five elements of the first column, the sy
 **Iterating over ndarrays**
 
 Let's assume that we have an ndarray defined as follows:
+
 ```python
 >>> x = np.arange(1,11).reshape(5,2)
 >>> x
@@ -389,6 +392,7 @@ Let's assume that we have an ndarray defined as follows:
            [ 9, 10]])
 
 When you use a normal for loop you can traverse all of the rows of a ndarray as shown below:
+
 ```python
 for elements in x:
     print(elements)
@@ -401,6 +405,7 @@ for elements in x:
     [9 10]
 
 If you need to access the elements of the first column you can use a for loop as follow:
+
 ```python
 for elements in x:
     print(elements[0])
@@ -424,7 +429,6 @@ for elements in x:
     6
     8
     10
-
 
 You could also use the flat property to iterate over the array step-by-step. 
 
@@ -552,7 +556,7 @@ A very important part of data science is visualization, and this is precisely wh
 The graph should display and look likes the following screenshot:
 
 ![Matplotlib basic plot](https://raw.githubusercontent.com/purcellconsult/Data-Science-in-Python/master/Matplotlib_basic_plot.png)
-###### **_Figure 4.1: Matplotlib basic plot._**
+###### **_Matplotlib basic plot._**
 
 It’s important to note that plt.show() must be there in order for the graph to be displayed. This is the basics of plotting your first graph using Matplotlib, but there are a lot more nifty things that you can do with this graphing library. Matplotlib features are similar to MATLAB. It supports multiple windowing environments such as GTK, Tkinter, Qt, and wxWindows as well as several non-interactive backends like pdfs.
 
